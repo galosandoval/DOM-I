@@ -102,16 +102,27 @@ contactP[2].textContent = 'sales@greatidea.io'
 
 footer.textContent = 'Copyright Great Idea! 2018'
 
-linksInNav[0].setAttribute('id', 'navBar')
-linksInNav[1].setAttribute('id', 'navBar')
-linksInNav[2].setAttribute('id', 'navBar')
-linksInNav[3].setAttribute('id', 'navBar')
-linksInNav[4].setAttribute('id', 'navBar')
-linksInNav[5].setAttribute('id', 'navBar')
+// linksInNav[0].setAttribute('id', 'navBar')
+// linksInNav[1].setAttribute('id', 'navBar')
+// linksInNav[2].setAttribute('id', 'navBar')
+// linksInNav[3].setAttribute('id', 'navBar')
+// linksInNav[4].setAttribute('id', 'navBar')
+// linksInNav[5].setAttribute('id', 'navBar')
+
+const newChild = document.createElement('a')
+newChild.textContent = 'FAQs'
+newChild.href = '#'
+newChild.style.color = 'green'
+nav.appendChild(newChild)
+const newNewChild = document.createElement('a')
+newNewChild.textContent = 'Home'
+newNewChild.href ='#'
+newNewChild.style.color = 'green'
+nav.prepend(newNewChild)
 
 for(let i = 0; i < linksInNav.length; i++){
   linksInNav[i].style.color = 'green'
 }
-  
+
   
 
